@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "function_pinters.h"
+#include "function_pointers.h"
 /**
  * array_iterator - function executes a function on array
  * @array: pointer to array
@@ -7,13 +7,13 @@
  * @action: pointer to function
  * Return: nothing
  **/
-void array_iterator(int *array, size_t size, void (*action)(int));
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	uncigned int i;
+	unsigned int i;
 
-	if (array != Null && size > 0 && action != Null)
+	if (array != NULL && size > 0 && action != NULL)
 	{
 		for (i = 0; i < size; i++)
-			action (array[i]);
+			action(array[i]);
 	}
 }
